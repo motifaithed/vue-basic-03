@@ -5,6 +5,13 @@ const app = Vue.createApp({
       name: ''
     };
   },
+  watch:{
+    counter(value){
+      if(value > 50){
+        this.counter = 0;
+      }
+    }
+  },
   computed:{
     fullName(){
       console.log('we are here');
