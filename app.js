@@ -5,7 +5,23 @@ const app = Vue.createApp({
       name: ''
     };
   },
+  computed:{
+    fullName(){
+      console.log('we are here');
+      if(!this.name){
+        return;
+      }
+      return `${this.name} Andaya`; 
+    }
+  },
   methods: {
+    showFullName(){
+      console.log('we are here');
+      if(!this.name){
+        return;
+      }
+      return `${this.name} Andaya`; 
+    },
     resetName(){
       this.name = '';
     },
